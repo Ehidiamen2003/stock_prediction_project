@@ -95,6 +95,12 @@ def plot_stock_data(stock_data, ticker, predicted_prices, future_dates):
     # Display the plot in the Streamlit app
     st.pyplot(plt)
 
+# Console output function to print predictions
+def print_predictions(ticker, predicted_prices, future_dates):
+    print(f"Predictions for {ticker}:")
+    for date, price in zip(future_dates, predicted_prices):
+        print(f"Date: {date.strftime('%Y-%m-%d')}, Predicted Price: ${price:.2f}")
+
 # Streamlit app interface
 st.title("Stock Price Prediction with LSTM Neural Network")
 
@@ -129,6 +135,9 @@ if st.button("Predict Stock Prices"):
 
             # Create predicted dates based on the latest date in stock data
             future_dates = pd.date_range(start=stock_data.index[-1], periods=len(predicted_prices) + 1, freq='D')[1:]
+            
+            # Print predictions to console
+            print_predictions(ticker, predicted_prices, future_dates)
             
             # Plot the stock data with predicted prices
             plot_stock_data(stock_data, ticker, predicted_prices, future_dates)
