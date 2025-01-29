@@ -49,4 +49,4 @@ Follow the on-screen instructions to input the stock ticker and date range for p
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE file for details.
+This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
