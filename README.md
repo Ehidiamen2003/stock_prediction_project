@@ -13,40 +13,40 @@ This project uses machine learning to predict stock prices using historical data
 
 ## Setup
 
-1. Clone the repository:
-    ```bash
-    git clone https://github.com/Ehidiamen2003/stock_prediction_project.git
-    ```
+### Clone the repository:
+```bash
+git clone https://github.com/Ehidiamen2003/stock_prediction_project.git
+```
 
-2. Create a virtual environment:
-    ```bash
-    python3 -m venv venv
-    ```
+### Create a virtual environment:
+```bash
+python3 -m venv venv
+```
 
-3. Activate the virtual environment:
-    - On Windows:
-      ```bash
-      .\venv\Scripts\activate
-      ```
-    - On MacOS/Linux:
-      ```bash
-      source venv/bin/activate
-      ```
+### Activate the virtual environment:
+- **On Windows:**
+  ```bash
+  .\venv\Scripts\activate
+  ```
+- **On MacOS/Linux:**
+  ```bash
+  source venv/bin/activate
+  ```
 
-4. Install the required dependencies:
-    ```bash
-    pip install -r requirements.txt
-    ```
+### Install the required dependencies:
+```bash
+pip install -r requirements.txt
+```
 
 ## Usage
 
-1. Run the stock prediction script:
-    ```bash
-    python predict.py
-    ```
+Run the stock prediction app using Streamlit:
+```bash
+streamlit run app.py
+```
 
-2. View the results in the output file or console.
+Follow the on-screen instructions to input the stock ticker and date range for predictions.
 
 ## License
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+This project is licensed under the MIT License - see the LICENSE file for details.
